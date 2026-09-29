@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f7f4">
+    <meta name="description"
+        content="Find a home in Lagos with help from people who know the neighbourhoods, the questions to ask, and the details worth checking.">
+    <title>PrimeHaven Properties | Find a place you'll love to call home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="PrimeHaven home">
+                <span class="brand-mark" aria-hidden="true"><i data-lucide="house"></i></span>
+                <span class="brand-name">Prime<span>Haven</span><small>PROPERTIES</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="site-menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="nav-menu" id="site-menu">
+                <div class="nav-links">
+                    <a class="nav-link is-current" href="#home">Home</a>
+                    <a class="nav-link" href="#properties">Properties</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+                <a class="button button-dark nav-cta" href="#properties">View Properties <i
+                        data-lucide="arrow-up-right"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow"><span class="eyebrow-line"></span> Lagos property, with people on your side</span>
+                <h1>Find a place<br>you'll love to<br><em>call home.</em></h1>
+                <p class="hero-description">Moving in Lagos comes with plenty to figure out. We help you find the right
+                    place, ask the right questions and feel good about your next move.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#properties">Explore properties <i
+                            data-lucide="arrow-up-right"></i></a>
+                    <a class="text-link" href="#contact">Contact an agent <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85"
+                    alt="A contemporary home with a light-filled living room opening onto a garden"
+                    fetchpriority="high">
+                <div class="hero-image-caption">A look inside the kind of home we help you find.</div>
+            </div>
+        </section>
+
+        <section class="search-section container" aria-label="Find a property">
+            <form class="search-bar" id="property-search">
+                <label class="search-field"><span>I'm looking for</span><span class="select-wrap"><i
+                            data-lucide="key-round"></i><select name="transaction" aria-label="Buy or rent">
+                            <option value="all">Buy or rent</option>
+                            <option value="buy">Buy a home</option>
+                            <option value="rent">Rent a home</option>
+                        </select></span></label>
+                <label class="search-field"><span>Location</span><span class="select-wrap"><i
+                            data-lucide="map-pin"></i><select name="location" aria-label="Property location">
+                            <option value="all">Anywhere in Lagos</option>
+                            <option value="lekki">Lekki</option>
+                            <option value="ikoyi">Ikoyi</option>
+                            <option value="ikeja">Ikeja</option>
+                            <option value="victoria-island">Victoria Island</option>
+                        </select></span></label>
+                <label class="search-field"><span>Property type</span><span class="select-wrap"><i
+                            data-lucide="building-2"></i><select name="type" aria-label="Property type">
+                            <option value="all">Any property type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="duplex">Duplex</option>
+                        </select></span></label>
+                <button class="button button-gold search-button" type="submit"><i data-lucide="search"></i>
+                    Search</button>
+            </form>
+        </section>
+
+        <section class="properties-section section-space" id="properties">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow"><span class="eyebrow-line"></span> A selection of homes in Lagos</span>
+                        <h2>Featured<br><em>properties.</em></h2>
+                    </div>
+                    <a class="text-link section-link" href="#contact">Find your place <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+                <p class="search-feedback" id="search-feedback" aria-live="polite"></p>
+                <div class="property-grid" id="property-grid">
+                    <article class="property-card" data-transaction="buy" data-location="lekki" data-type="duplex">
+                        <div class="property-image-wrap"><img
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=82"
+                                alt="Modern white luxury duplex surrounded by greenery" loading="lazy"><span
+                                class="property-tag">For sale</span><button class="save-button" type="button"
+                                aria-label="Save Luxury 4 Bedroom Duplex"><i data-lucide="heart"></i></button></div>
+                        <div class="property-details">
+                            <div class="property-location"><i data-lucide="map-pin"></i> Lekki Phase 1, Lagos</div>
+                            <h3>4-Bedroom Family Duplex</h3>
+                            <div class="property-features"><span><i data-lucide="bed-double"></i> 4 beds</span><span><i
+                                        data-lucide="bath"></i> 5 baths</span><span><i data-lucide="car-front"></i> 2
+                                    parking</span></div>
+                            <div class="property-bottom"><span class="property-price">₦85,000,000</span><button
+                                    class="view-property" type="button" data-title="4-Bedroom Family Duplex"
+                                    data-price="₦85,000,000" data-location="Lekki Phase 1, Lagos"
+                                    data-image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                                    data-features="4 bedrooms · 5 bathrooms · 2 parking spaces"
+                                    data-description="Four bedrooms, five bathrooms and parking for two. Get in touch to arrange a viewing and ask us about the details.">View
+                                    property <i data-lucide="arrow-up-right"></i></button></div>
+                        </div>
+                    </article>
+                    <article class="property-card" data-transaction="rent" data-location="ikoyi" data-type="apartment">
+                        <div class="property-image-wrap"><img
+                                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=82"
+                                alt="Elegant modern apartment living room with natural light" loading="lazy"><span
+                                class="property-tag">For rent</span><button class="save-button" type="button"
+                                aria-label="Save Ikoyi Garden Residence"><i data-lucide="heart"></i></button></div>
+                        <div class="property-details">
+                            <div class="property-location"><i data-lucide="map-pin"></i> Ikoyi, Lagos</div>
+                            <h3>3-Bedroom Apartment</h3>
+                            <div class="property-features"><span><i data-lucide="bed-double"></i> 3 beds</span><span><i
+                                        data-lucide="bath"></i> 3 baths</span><span><i data-lucide="car-front"></i> 2
+                                    parking</span></div>
+                            <div class="property-bottom"><span class="property-price">₦12,500,000 <small>/
+                                        year</small></span><button class="view-property" type="button"
+                                    data-title="3-Bedroom Apartment" data-price="₦12,500,000 / year"
+                                    data-location="Ikoyi, Lagos"
+                                    data-image="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                                    data-features="3 bedrooms · 3 bathrooms · 2 parking spaces"
+                                    data-description="A three-bedroom rental in Ikoyi, with two parking spaces. Contact us for availability and to arrange a visit.">View
+                                    property <i data-lucide="arrow-up-right"></i></button></div>
+                        </div>
+                    </article>
+                    <article class="property-card" data-transaction="buy" data-location="victoria-island"
+                        data-type="apartment">
+                        <div class="property-image-wrap"><img
+                                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=82"
+                                alt="Premium apartment interior with a polished marble kitchen" loading="lazy"><span
+                                class="property-tag">For sale</span><button class="save-button" type="button"
+                                aria-label="Save Victoria Island Penthouse"><i data-lucide="heart"></i></button></div>
+                        <div class="property-details">
+                            <div class="property-location"><i data-lucide="map-pin"></i> Victoria Island, Lagos</div>
+                            <h3>3-Bedroom Island Apartment</h3>
+                            <div class="property-features"><span><i data-lucide="bed-double"></i> 3 beds</span><span><i
+                                        data-lucide="bath"></i> 4 baths</span><span><i data-lucide="car-front"></i> 2
+                                    parking</span></div>
+                            <div class="property-bottom"><span class="property-price">₦145,000,000</span><button
+                                    class="view-property" type="button" data-title="3-Bedroom Island Apartment"
+                                    data-price="₦145,000,000" data-location="Victoria Island, Lagos"
+                                    data-image="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85"
+                                    data-features="3 bedrooms · 4 bathrooms · 2 parking spaces"
+                                    data-description="A three-bedroom Victoria Island apartment with four bathrooms and two parking spaces. Speak with an agent for more information.">View
+                                    property <i data-lucide="arrow-up-right"></i></button></div>
+                        </div>
+                    </article>
+                    <article class="property-card" data-transaction="rent" data-location="ikeja" data-type="house">
+                        <div class="property-image-wrap"><img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=82"
+                                alt="Serene modern home with broad windows and landscaped garden" loading="lazy"><span
+                                class="property-tag">For rent</span><button class="save-button" type="button"
+                                aria-label="Save The Ikeja Courtyard Home"><i data-lucide="heart"></i></button></div>
+                        <div class="property-details">
+                            <div class="property-location"><i data-lucide="map-pin"></i> GRA, Ikeja</div>
+                            <h3>4-Bedroom Home in Ikeja GRA</h3>
+                            <div class="property-features"><span><i data-lucide="bed-double"></i> 4 beds</span><span><i
+                                        data-lucide="bath"></i> 4 baths</span><span><i data-lucide="car-front"></i> 3
+                                    parking</span></div>
+                            <div class="property-bottom"><span class="property-price">₦18,000,000 <small>/
+                                        year</small></span><button class="view-property" type="button"
+                                    data-title="4-Bedroom Home in Ikeja GRA" data-price="₦18,000,000 / year"
+                                    data-location="GRA, Ikeja"
+                                    data-image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                                    data-features="4 bedrooms · 4 bathrooms · 3 parking spaces"
+                                    data-description="Four bedrooms, four bathrooms and parking for three in Ikeja GRA. Ask our team about the rental terms and arrange a viewing.">View
+                                    property <i data-lucide="arrow-up-right"></i></button></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="no-results" id="no-results" hidden><i data-lucide="search-x"></i>
+                    <h3>No homes found just yet.</h3>
+                    <p>Try another location or property type to see more listings.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section section-space">
+            <div class="container">
+                <div class="center-heading"><span class="eyebrow"><span class="eyebrow-line"></span> A good place to
+                        start</span>
+                    <h2>Local knowledge.<br><em>Clear advice.</em></h2>
+                    <p>We’ll help you compare your options and understand what comes next.</p>
+                </div>
+                <div class="benefit-grid">
+                    <article class="benefit"><span class="benefit-icon"><i data-lucide="badge-check"></i></span>
+                        <h3>Listings checked</h3>
+                        <p>We review the details before a home goes on our list.</p>
+                    </article>
+                    <article class="benefit"><span class="benefit-icon"><i data-lucide="users-round"></i></span>
+                        <h3>Someone to call</h3>
+                        <p>Talk through your options with an agent who knows Lagos.</p>
+                    </article>
+                    <article class="benefit"><span class="benefit-icon"><i data-lucide="files"></i></span>
+                        <h3>No guesswork</h3>
+                        <p>We explain the steps and costs before you commit.</p>
+                    </article>
+                    <article class="benefit"><span class="benefit-icon"><i data-lucide="map-pinned"></i></span>
+                        <h3>Neighbourhood insight</h3>
+                        <p>Get a feel for the area as well as the property.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section-space" id="about">
+            <div class="container about-grid">
+                <div class="about-visual"><img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1300&q=85"
+                        alt="Living room with a comfortable sofa and natural light" loading="lazy"></div>
+                <div class="about-copy"><span class="eyebrow"><span class="eyebrow-line"></span> About PrimeHaven</span>
+                    <h2>Property expertise<br>you can <em>trust.</em></h2>
+                    <p>A listing can show you the rooms. It can’t tell you what the street is like at the end of the
+                        day, or which questions to ask before you make an offer.</p>
+                    <p>We’re a Lagos property team here to talk through those details, arrange viewings and help you
+                        make a decision that feels right for you.</p><a class="button button-dark" href="#services">How
+                        we can help <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section section-space" id="services">
+            <div class="container">
+                <div class="section-heading services-heading">
+                    <div><span class="eyebrow"><span class="eyebrow-line"></span> What we do</span>
+                        <h2>Help with the<br><em>next step.</em></h2>
+                    </div>
+                    <p>Buying, renting or looking after a property? Start with a conversation.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card"><span class="service-icon"><i
+                                data-lucide="key-square"></i></span><span class="service-index">01 / SALES</span>
+                        <h3>Property Sales</h3>
+                        <p>Find and purchase properties that match your needs.</p><a class="circle-link"
+                            href="#properties" aria-label="Explore property sales"><i
+                                data-lucide="arrow-up-right"></i></a>
+                    </article>
+                    <article class="service-card service-card-featured"><span class="service-icon"><i
+                                data-lucide="door-open"></i></span><span class="service-index">02 / RENTALS</span>
+                        <h3>Property Rentals</h3>
+                        <p>Discover quality rental properties across Lagos.</p><a class="circle-link" href="#properties"
+                            aria-label="Explore property rentals"><i data-lucide="arrow-up-right"></i></a>
+                    </article>
+                    <article class="service-card"><span class="service-icon"><i data-lucide="building"></i></span><span
+                            class="service-index">03 / MANAGEMENT</span>
+                        <h3>Property Management</h3>
+                        <p>Professional management for property owners.</p><a class="circle-link" href="#contact"
+                            aria-label="Ask about property management"><i data-lucide="arrow-up-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section section-space">
+            <div class="container testimonials-layout">
+                <div class="testimonials-intro"><span class="eyebrow"><span class="eyebrow-line"></span> Sample client
+                        notes</span>
+                    <h2>A few words<br>from <em>home.</em></h2>
+                    <p>Illustrative testimonials for this demo. Replace with approved client feedback before publishing.
+                    </p>
+                    <div class="testimonial-controls"><button type="button" class="slider-arrow" id="testimonial-prev"
+                            aria-label="Previous testimonials"><i data-lucide="arrow-left"></i></button><button
+                            type="button" class="slider-arrow" id="testimonial-next" aria-label="Next testimonials"><i
+                                data-lucide="arrow-right"></i></button></div><span class="testimonial-counter"
+                        id="testimonial-counter">01 — 03</span>
+                </div>
+                <div class="testimonial-grid" id="testimonial-grid">
+                    <article class="testimonial-card is-active"><span class="quote-mark">“</span>
+                        <blockquote>The agent was patient while we compared a few places. We never felt rushed, and the
+                            viewing times worked around our schedule.</blockquote>
+                        <div class="testimonial-author"><span class="author-initials">DA</span><span><strong>Daniel
+                                    A.</strong><small>Illustrative buyer story · Lekki</small></span></div>
+                    </article>
+                    <article class="testimonial-card" hidden><span class="quote-mark">“</span>
+                        <blockquote>I had questions about the area as much as the apartment. It helped to have someone
+                            who could talk me through both.</blockquote>
+                        <div class="testimonial-author"><span class="author-initials">MO</span><span><strong>Mariam
+                                    O.</strong><small>Illustrative renter story · Ikoyi</small></span></div>
+                    </article>
+                    <article class="testimonial-card" hidden><span class="quote-mark">“</span>
+                        <blockquote>Having one person to call about viewings and the paperwork made the whole process
+                            easier to keep track of.</blockquote>
+                        <div class="testimonial-author"><span class="author-initials">TF</span><span><strong>Tunde
+                                    F.</strong><small>Illustrative owner story · Victoria Island</small></span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="contact">
+            <div class="container cta-inner">
+                <div class="cta-copy"><span class="eyebrow cta-eyebrow"><span class="eyebrow-line"></span> Start with a
+                        conversation</span>
+                    <h2>Let’s find the<br><em>right place.</em></h2>
+                    <p>Tell us whether you’re buying, renting or looking for property management. Our Lagos team will
+                        help you work out the next step.</p>
+                </div>
+                <div class="cta-action"><span class="cta-action-label">GET IN TOUCH</span><a class="button button-light"
+                        href="mailto:hello@primehaven.ng?subject=Property%20enquiry&body=Hello%20PrimeHaven%2C%0A%0AI%E2%80%99m%20looking%20to%20buy%2C%20rent%20or%20discuss%20property%20management%20in%20Lagos.%0A%0APlease%20get%20in%20touch.">Email
+                        our Lagos team <i data-lucide="arrow-up-right"></i></a><a class="cta-email"
+                        href="mailto:hello@primehaven.ng">hello@primehaven.ng</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark"
+                        aria-hidden="true"><i data-lucide="house"></i></span><span
+                        class="brand-name">Prime<span>Haven</span><small>PROPERTIES</small></span></a>
+                <p class="footer-intro">A local team for your<br>next move in Lagos.</p>
+                <div class="footer-nav"><span class="footer-label">EXPLORE</span><a href="#home">Home</a><a
+                        href="#properties">Properties</a><a href="#about">About</a><a href="#services">Services</a><a
+                        href="#contact">Contact</a></div>
+                <div class="footer-contact"><span class="footer-label">GET IN TOUCH</span><a
+                        href="mailto:hello@primehaven.ng">hello@primehaven.ng</a><a href="tel:+2348000000000">+234 800
+                        000 0000</a><span>Lagos, Nigeria</span></div>
+                <div class="footer-social"><span class="footer-label">FOLLOW ALONG</span><a href="https://instagram.com"
+                        target="_blank" rel="noreferrer" aria-label="Instagram"><img
+                            src="https://cdn.simpleicons.org/instagram/DED8CC" alt="" loading="lazy"></a><a
+                        href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span
+                            class="linkedin-mark" aria-hidden="true">in</span></a><a href="https://facebook.com"
+                        target="_blank" rel="noreferrer" aria-label="Facebook"><img
+                            src="https://cdn.simpleicons.org/facebook/DED8CC" alt="" loading="lazy"></a></div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 PrimeHaven Properties. All rights reserved.</span><span>Lagos,
+                    Nigeria</span></div>
+        </div>
+    </footer>
+
+    <dialog class="property-dialog" id="property-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
+            type="button" aria-label="Close property details"><i data-lucide="x"></i></button><img class="dialog-image"
+            id="dialog-image" alt="">
+        <div class="dialog-content"><span class="property-location" id="dialog-location"></span>
+            <h2 id="dialog-title"></h2>
+            <p class="dialog-features" id="dialog-features"></p>
+            <p class="dialog-description" id="dialog-description"></p>
+            <p class="dialog-price" id="dialog-price"></p><a class="button button-dark dialog-contact"
+                href="mailto:hello@primehaven.ng">Enquire about this home <i data-lucide="arrow-up-right"></i></a>
+        </div>
+    </dialog>
+</body>
+
+</html>
